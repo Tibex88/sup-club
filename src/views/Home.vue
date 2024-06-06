@@ -1,5 +1,5 @@
 <template>
-    <p class="bg-burnham flex gap-2 items-center justify-center text-bone text-center p-2">
+    <p class="sticky top-0 bg-burnham flex gap-2 items-center justify-center text-bone text-center p-2">
         <span>
             Next Dinner is at Figma Config 
         </span>
@@ -9,45 +9,57 @@
     </p>
     <!-- BORDER -->
 
-    <div>
+    <div class="flex flex-col items-center justify-center h-screen gap-40">
     
-        <p>sup club</p>    
+        <p class="text-center text-4xl capitalize text-orange font-semibold ">
+           <span class="uppercase font-extrabold"> sup </span> club
+        </p>    
 
-        <p>JOIN BRILLIANT MINDS IN BRAND, WEB, PRODUCT, UI/UX AND ICON DESIGN FOR EVENINGS OF COLLABORATION AND INSPIRATION</p>
+        <div class="flex flex-col items-center">
+
+            <p class="text-center text-lg p-3">
+                JOIN BRILLIANT MINDS IN BRAND, WEB, PRODUCT, UI/UX AND ICON DESIGN FOR EVENINGS OF COLLABORATION AND INSPIRATION
+            </p>
         
-        <button>SEE NEXT EVENT</button>
+            <button class="bg-orange p-3 text-white capitalize font-semibold">SEE NEXT EVENT</button>
+        </div>
 
     </div>
 
-    <p>
+    <p class="text-orange text-3xl font-extrabold w-1/2 pl-3 uppercase">
         Gather ‘round the table
     </p>
 
-
-    <div>
+    <div class="bg-burnham p-3 flex flex-col gap-8 py-36">
         <!-- images slanted -->
+        <p class="text-bone uppercase pr-9"> Our events are for all designers across any discipline and career stage. </p>
 
-        <p> Our events are for all designers across any discipline and career stage. </p>
-
-        <p> From Students to Industry Leaders, All Designers Welcome. </p>        
+        <p class="text-orange text-4xl font-bold"> From Students to Industry Leaders, All Designers Welcome. </p>        
     </div>
 
     <div>
         <!-- bg-img -->
-        <div>
+        <div class="text-bone font-extrabold bg-orange pr-9 flex flex-col gap-5 pl-3 pb-40">
 
-            <p> Config Design Dinner </p>
-            <button>SPEAKERS</button>
-            <p v-for="i in 2">
-                <!-- image -->
-                <span>
-                    Soren Iverson
-                </span>
-                <span>
-                    @Soren_Iverson
-                </span>    
-            </p>
-        </div>
+            <p class="text-4xl w-min font-bold"> Config Design Dinner </p>
+            <button class="bg-bone text-orange p-2 text-sm w-fit">SPEAKERS</button>
+            
+            <div class="flex gap-3 text-sm">
+
+                <div v-for="i in 2" class="flex flex-col">
+                        <!-- image -->
+                         
+                    <div class="w-5 h-5 rounded-full bg-bone"></div>
+                        <span class="font-bold">
+                            Soren Iverson
+                        </span>
+                        
+                        <span class="font-normal">
+                            @Soren_Iverson
+                        </span>    
+                    </div>
+                </div>
+            </div>
 
         <div>
             <!-- orange bg -->
